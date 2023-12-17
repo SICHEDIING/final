@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cherif chedi- CV</title>
     <link rel="stylesheet" href="style2.css">
+    
+    <script src="script.js"></script>
 </head>
 <body>
     <section class="Services">
@@ -13,26 +15,33 @@
             <header class="header">
                 <a href="#" class="logo">Cherif CHEDI</a>
               
-                  <nav class="navbar">
-                      <a href="index.html">Accueil</a>
-                      <a href="A propos.html">A propos </a>
-                      <a href="#"class="active">Services</a>
-                      <a href="Profile.html">Profile</a>
-                      <a href="Contact.html">Contact</a>
+                <nav class="navbar">
+                    <a href="index.html">Accueil</a>
+                    <a href="A propos.html">A propos </a>
+                    <a href="#" class="active">Services</a>
+                    <a href="Profile.html">Profile</a>
+                    <a href="Contact.html">Contact</a>
                 </nav>
             </header>  
             <h3>Compétences</h3>
             <ul>
-              <p>- j'ai la capacité de travailler sur les logiciels suivantes:</p>
-              <li>Arduino</li>
-              <li>VHDL</li>
-              <li>TIA portal</li>
-              <li>FPGA</li>
-              <li>Matlab</li>
-              <p>- aussi que Je suis passionné par clouding.</p>
+                <p>- j'ai la capacité de travailler sur les logiciels suivantes:</p>
+                <li>Arduino</li>
+                <li>VHDL</li>
+                <li>TIA portal</li>
+                <li>FPGA</li>
+                <li>Matlab</li>
+                <p>- aussi que Je suis passionné par le clouding.</p>
             </ul>
+            
+            <!-- Add the translation button -->
+            <button id="translateButton">Project</button>
         </div>
         
     </section> 
-    <img src="faaa.jpg" alt="cherif chedi ">   
-    </body>
+    <img src="faaa.jpg" alt="cherif chedi "id="profileImage" onclick="changeImage()">   
+
+    <!-- Include the translation script -->
+    <script src="translation.js"></script>
+</body>
+</html>

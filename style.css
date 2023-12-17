@@ -76,7 +76,7 @@ color: #00abf0;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 100px;
     height: 100%;
     background: #00abf0;
     border: 2px solid #00abf0;
@@ -158,3 +158,43 @@ img {
     background :transparent;
     transition: 3s;
 }
+/* style.css */
+
+/* style.css */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Accueil-content p {
+    animation: fadeInUp 1.5s ease-out; /* Adjust the duration and timing function as needed */
+}
+.Accueil-content h3 {
+    animation: fadeInUp 1.5s ease-out; /* Adjust the duration and timing function as needed */
+}
+/* Ajoutez un style pour le cadre de l'image */
+#profileImage {
+    border: 3px solid #fff; /* Couleur et épaisseur du cadre */
+    border-radius: 10px; /* Ajoutez des coins arrondis si vous le souhaitez */
+    cursor: pointer; /* Ajoutez un pointeur au survol de l'image */
+}
+
+/* Ajoutez un style pour l'animation au survol */
+#profileImage:hover {
+    transform: scale(1.1); /* Zoom sur l'image au survol */
+    transition: transform 0.3s ease; /* Ajoutez une transition fluide */
+}
+/* Ajoutez un style pour le conteneur de l'image */
+.image-container {
+    text-align: center; /* Centrez l'image dans le conteneur */
+    margin-top: 20px; /* Ajoutez une marge en haut si nécessaire */
+}
+
+

@@ -7,6 +7,9 @@
     <title>cherif chedi- CV</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <!-- Add this in the head section of your HTML -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
 </head>
 
 
@@ -25,7 +28,15 @@
     </header>
     <section class="Accueil">
         <div class="Accueil-content">
-            <h1>Salut,je suis CHERIF CHEDI</h1>
+          <!-- Modify your existing HTML -->
+<h1>
+    <span>S</span><span>a</span><span>l</span><span>u</span><span>t</span>,
+    <span>j</span><span>e</span><span> </span>
+    <span>s</span><span>u</span><span>i</span><span>s</span>
+    <span>C</span><span>H</span><span>E</span><span>R</span><span>I</span><span>F</span>
+    <span> </span><span>C</span><span>H</span><span>E</span><span>D</span><span>I</span>
+</h1>
+
             <h3>Futur ingénieur</h3>
             <p>Étudiant d'ingénierie passionné par l'automatisme et l'informatique
                 Titulaire d'un diplôme de technicien supérieur en automatisme et informatique industrielle, je suis actuellement en première année du cycle d'ingénieur. Je suis passionné par CLOUD COMPUTING et j'ai acquis une première expérience dans ce domaine lors de mon stage professionnel de 3 mois chez HONEYWELL.</p>
@@ -33,11 +44,36 @@
                     <a href="#">Embauche-moi</a>
                     <br>
                     <a href="#">Parlons-en</a>
-                    <button onclick="myFunction()">click me</button>
+                    <button  onclick="myFunction()"><a href="#">Hello</a></button>
                 </div>
         </div>
        
-     <img src="faaa.jpg" alt="cherif chedi ">
-   
+        <div class="image-container">
+            <img src="faaa.jpg" alt="cherif chedi" id="profileImage" onclick="changeImage()">
+        </div>
+     <script>
+        
+        const text = document.querySelector('h1');
+        text.innerHTML = text.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    
+        // Define the animation
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.letter',
+                opacity: [0, 1],
+                easing: 'easeInOutQuad',
+                duration: 1500,
+                delay: (el, i) => 100 * (i + 1)
+            });
+            function handleClick() {
+        alert("Étudiante en informatique avec une licence en automatisme et informatique industrielle, je suis passionnée par les technologies émergentes et la résolution de problèmes complexes. Forte d'une solide formation technique, j'ai acquis des compétences approfondies en programmation et en automatisation industrielle. Mon engagement envers l'innovation et ma capacité à assimiler rapidement de nouveaux concepts font de moi une candidate motivée et adaptable, prête à contribuer de manière significative dans un environnement professionnel dynamique.                ");
+    }
+
+    // Add event listeners to the links
+    document.querySelector('.btn-box a[href="#"]').addEventListener('click', handleClick);
+    document.querySelector('.btn-box a[href="#"]').addEventListener('click', handleClick);
+    document.querySelector('button').addEventListener('click', handleClick);
+    </script>
+  
 </body>
 </html>

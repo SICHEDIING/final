@@ -74,3 +74,15 @@ img {
     background :transparent;
     transition: 3s;
 }
+#translateButton {
+    background-color: #25064a; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Optional: Add some border-radius for a rounded look */
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+#translateButton:hover {
+    background-color: #568ec3; /* Darker green color on hover */
+}
